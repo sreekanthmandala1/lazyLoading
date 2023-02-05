@@ -1,0 +1,4 @@
+<div *ngFor="let food of foods">
+<input type="checkbox" [value]="food.id" [checked]="food.select" (change)="onChangeFood($event)"/>
+{{food.name}}
+</div>
